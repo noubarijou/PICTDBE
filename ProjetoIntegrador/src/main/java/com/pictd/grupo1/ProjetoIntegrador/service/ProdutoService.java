@@ -1,5 +1,6 @@
 package com.pictd.grupo1.ProjetoIntegrador.service;
 
+import com.pictd.grupo1.ProjetoIntegrador.model.Categoria;
 import com.pictd.grupo1.ProjetoIntegrador.model.Produto;
 import com.pictd.grupo1.ProjetoIntegrador.repository.CategoriaRepository;
 import com.pictd.grupo1.ProjetoIntegrador.repository.ProdutoRepository;

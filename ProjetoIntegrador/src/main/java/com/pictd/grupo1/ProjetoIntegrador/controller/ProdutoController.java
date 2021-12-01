@@ -2,6 +2,7 @@ package com.pictd.grupo1.ProjetoIntegrador.controller;
 
 
 import com.pictd.grupo1.ProjetoIntegrador.model.Produto;
+import com.pictd.grupo1.ProjetoIntegrador.service.CategoriaService;
 import com.pictd.grupo1.ProjetoIntegrador.service.ProdutoService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.ResponseEntity;
@@ -18,6 +19,9 @@ import java.util.Optional;
 public class ProdutoController {
     @Autowired
     private ProdutoService produtoService;
+
+    @Autowired
+    private CategoriaService categoriaService;
 
     @GetMapping
     public List<Produto> buscarTodos(){
