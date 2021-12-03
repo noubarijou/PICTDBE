@@ -15,7 +15,7 @@ import java.util.List;
 import java.util.Optional;
 
 @RestController
-@RequestMapping ("/produtos")
+@RequestMapping ("/produto")
 public class ProdutoController {
     @Autowired
     private ProdutoService produtoService;

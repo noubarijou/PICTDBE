@@ -17,9 +17,12 @@ public class Produto implements Serializable {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Integer id;
+    @Column(nullable = false)
     private String titulo;
     private double preco;
+    @Column(nullable = false)
     private String descricao;
+    @Column(nullable = false)
     private String imagem;
     @ManyToOne
     @JoinColumn(name = "categoria_id")
